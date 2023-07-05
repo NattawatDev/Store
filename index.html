@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <h1>ร้านค้าทั่วไป</h1>
+
+      <!-- ชื่อสินค้า -->
+      <div class="Products">
+        <label for="">ชื่อสินค้า</label>
+        <input type="text" name="product" id="product" />
+        <p id="errorP" class="error" style="color: red"></p>
+      </div>
+
+      <!-- จำนวนสินค้า -->
+      <div class="Amount">
+        <label for="">จำนวนสินค้า</label>
+        <input type="number" name="amount" id="amount" />
+        <p id="errorN" class="error" style="color: red"></p>
+      </div>
+
+      <!-- ราคาสินค้า -->
+      <div class="Price">
+        <label for="">ราคาสินค้า</label>
+        <input type="number" name="price" id="price" />
+        <p id="errorPR" class="error" style="color: red"></p>
+      </div>
+
+      <!-- btn -->
+      <input id="btn" class="btn" type="button" value="ตกลง" />
+
+      <!-- result -->
+
+      <div class="ResultAll">
+        <h3>สรุปรายการ</h3>
+        <div class="Result">
+          <p id="resultPro"></p>
+          <p id="resultA"></p>
+          <p id="resultPR"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
